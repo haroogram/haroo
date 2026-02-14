@@ -7,13 +7,13 @@
 
 ## 📌 Table of Contents
 
-- [🧑‍💻 About Me](#-about-me)
-- [🚀 Project Overview](#-project-overview)
-- [🏗 Architecture & Environment](#-architecture--environment)
-- [🧠 Trouble Shooting & Engineering Decisions](#-trouble-shooting--engineering-decisions)
-- [📈 Improvements](#-improvements)
-- [📚 What I Learned](#-what-i-learned)
-- [🔗 Links](#-links)
+1. [About Me](#-about-me)
+2. [Project Overview](#-project-overview)
+3. [Architecture & Environment](#-architecture--environment)
+4. [Trouble Shooting & Engineering Decisions](#-trouble-shooting--engineering-decisions)
+5. [Improvements](#-improvements)
+6. [What I Learned](#-what-i-learned)
+7. [Links](#-links)
 
 ---
 
