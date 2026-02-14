@@ -74,6 +74,8 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ## 🏗 Architecture & Environment
 
+[아키텍처 다이어그램](images/architecture.png)
+
 ### Cloud Environment
 - AWS Multi-AZ Architecture
 - Auto Scaling Group
@@ -186,9 +188,9 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ## 🔗 Links
 
-- GitHub: [AWS 기반 교육형 웹 서비스 프로젝트](https://github.com/haroogram/anonymous_project)
-- Demo PPT: [AWS 기반 교육형 웹 서비스 프로젝트 PPT](https://m.site.naver.com/20OAJ)
+- [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/haroogram/anonymous_project)
+- [![Demo](https://img.shields.io/badge/Demo-PPT-blue)](https://m.site.naver.com/20OAJ)
  
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/haroogram/anonymous_project)
-[![Demo](https://img.shields.io/badge/Demo-PPT-blue)](https://m.site.naver.com/20OAJ)
+
+
 
