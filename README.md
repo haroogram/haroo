@@ -19,16 +19,23 @@
 
 > 👋 지속 가능한 인프라를 설계하는 **엔지니어 곽경국**입니다.
 
-## 🛠 Technology (보유 기술)
+## 🛠 Technology
 
-| 기술분류 | 보유기술 |
-|----------|----------|
-| **네트워크 / 인프라 기초** | • TCP/IP, DNS, DHCP 등 네트워크 기본 구조 이해<br>• L2/L3 스위칭·라우팅 구조 이해 및 실습 경험<br>• VPN 환경에서 내부 네트워크 접근 및 서비스 연결 경험<br>• Wireshark 활용 패킷 분석 및 장애 원인 파악<br>• ACL 기반 트래픽 제어 및 기본적인 네트워크 보안 설정 경험 |
-| **서버 / OS 운영** | • Linux(Ubuntu) 환경에서 서버 구축 및 운영<br>• Nginx 기반 웹 서버 구성 및 서비스 운영 경험<br>• MariaDB(MySQL) 설치·연동 및 애플리케이션 연동 경험<br>• Web / Mail / DHCP / FTP 등 기본 인프라 서비스 구성 경험<br>• 서버 이중화 구조 이해 및 실습 경험 |
-| **가상화 / 클라우드** | • VMware 기반 가상화 환경에서 VM 구성 및 관리<br>• AWS 환경에서 다음 서비스 활용 경험<br>&nbsp;&nbsp;&nbsp;&nbsp;◦ EC2, S3, RDS, IAM, Auto Scaling, Code Deploy<br>• 클라우드 리소스 간 연동 구조 이해 (네트워크·보안·권한 중심) |
-| **컨테이너 / 배포 환경** | • Docker를 활용한 애플리케이션 이미지 빌드 및 배포 경험<br>• Docker 기반 서비스 구성 및 로컬/서버 환경 실행<br>• 컨테이너 기반 환경에서 애플리케이션 구조 이해 |
-| **Kubernetes** | • Kubernetes 기본 아키텍처 이해 (Master / Worker 구조)<br>• Minikube 기반 로컬 Kubernetes 환경 구축<br>• Deployment, Service, Pod 단위 리소스 운영 경험<br>• Rollout, Rollback, 기본 트래블슈팅 경험<br>• 장애 발생 시 로그·상태 기반으로 원인 추적 경험 |
-| **모니터링 / 운영 관점** | • 기본적인 모니터링 구조 이해<br>• Prometheus & Grafana 활용 경험<br>• 서비스 상태 및 리소스 사용량 확인 경험<br>• 장애 발생 시 로그·상태 기반으로 원인 범위 축소 경험 |
+**Infra / Network**  
+TCP/IP · DNS · ACL · VPN · Wireshark  
+
+**Server**  
+Linux · Nginx · MariaDB  
+
+**Cloud**  
+AWS (EC2 · RDS · IAM · ASG · WAF · CodeDeploy)  
+
+**Container & Orchestration**  
+Docker · Kubernetes · Minikube  
+
+**Monitoring**  
+Prometheus · Grafana
+
 
 <!-- 
 이 영역에는 개인의 배경, 경력 요약, 기술적 정체성,
