@@ -74,7 +74,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ## 🏗 Architecture & Environment
 
-[아키텍처 다이어그램](images/architecture.png)
+![아키텍처 다이어그램](images/architecture.png)
 
 ### Cloud Environment
 - AWS Multi-AZ Architecture
