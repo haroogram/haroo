@@ -1,4 +1,4 @@
-# 👋 안녕하세요, 곽경국입니다.
+# 👋 지속 가능한 인프라를 설계하는 엔지니어, 곽경국
 
 > 구조적이고 지속 가능한 인프라를 설계하는 엔지니어  
 > 단기적 결과보다 “오래 유지될 수 있는 시스템”을 지향합니다.
@@ -39,6 +39,10 @@ AWS 기반 인프라 설계 및 운영 자동화 역량을 검증하기 위해
 
 **목표**  
 웹 기능 개발이 아닌, AWS 인프라 아키텍처 설계·구축·보안·CI/CD·운영 자동화 역량 검증
+
+**Project Info**
+- 프로젝트 기간 : 2025.12.17 ~ 2026.01.16 (총 31일)
+- 참여 인원 : 4명
 
 **Role**  
 - 팀장
@@ -163,5 +167,5 @@ AWS 기반 인프라 설계 및 운영 자동화 역량을 검증하기 위해
 
 ## 🔗 Links
 
-- GitHub: https://github.com/haroogram/anonymous_project
-- Demo PPT: https://m.site.naver.com/20OAJ
+- GitHub: [AWS 기반 교육형 웹 서비스 프로젝트](https://github.com/haroogram/anonymous_project)
+- Demo PPT: [AWS 기반 교육형 웹 서비스 프로젝트 PPT](https://m.site.naver.com/20OAJ)
