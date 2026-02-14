@@ -86,7 +86,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 ### Server
 - Ubuntu (EC2)
 - MariaDB (RDS)
-- Redis (EC2 → ElastiCache 전환)
+- Redis (Single EC2)
 
 ### CI/CD
 - GitHub Actions
@@ -96,9 +96,8 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ### Tech Stack
 - Python / Django
-- Redis
+- Redis (cache/broker)
 - Celery / Celery Beat
-- AWS (EC2, RDS, S3, IAM, WAF, CloudWatch, CloudFormation)
 
 ---
 
