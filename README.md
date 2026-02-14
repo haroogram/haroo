@@ -36,6 +36,9 @@ Docker · Kubernetes · Minikube
 **DevOps / Automation**  
 Git · GitHub Actions · Terraform · CloudFormation  
 
+**Application**  
+Java · Spring Boot · Python · Django · PHP · REST API 
+
 **Monitoring**  
 Prometheus · Grafana
 
