@@ -19,19 +19,22 @@
 
 > 👋 지속 가능한 인프라를 설계하는 **엔지니어 곽경국**입니다.
 
-## 🛠 Technology
+### 🛠 Technology
 
 **Infra / Network**  
-TCP/IP · DNS · ACL · VPN · Wireshark  
+TCP/IP · DNS · ACL · VPN · Routing  
 
-**Server**  
-Linux · Nginx · MariaDB  
+**Server / DB**  
+Linux(Ubuntu) · Nginx · Apache · MySQL · Oracle
 
-**Cloud**  
-AWS (EC2 · RDS · IAM · ASG · WAF · CodeDeploy)  
+**VM / Cloud**  
+VM ware · AWS (EC2 · RDS · IAM · ASG · WAF · CodeDeploy)  
 
 **Container & Orchestration**  
 Docker · Kubernetes · Minikube  
+
+**DevOps / Automation**  
+Git · GitHub Actions · Terraform · CloudFormation  
 
 **Monitoring**  
 Prometheus · Grafana
