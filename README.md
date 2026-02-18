@@ -127,7 +127,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-### 2️⃣ t3.micro CPU Throttling Issue
+### 2️⃣ t3.micro CPU Throttling 이슈
 
 **BEFORE**
 - Free Tier 환경에서 `t3.micro` 인스턴스 사용
@@ -151,7 +151,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-### 3️⃣ WAF Ruleset Causing `/admin` 403 Error
+### 3️⃣ WAF Ruleset 으로 인한 `/admin` 경로 403 Error
 
 **BEFORE**
 - ALB 및 Target Group 정상 동작
