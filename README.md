@@ -50,9 +50,9 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-## 🚀 Project Overview
+## 🔖 Project Overview
 
-### 📌 AWS 기반 교육형 웹 서비스 프로젝트
+### 🖍️ AWS 기반 교육형 웹 서비스 프로젝트
 
 **목표**  
 웹 기능 개발이 아닌, AWS 인프라 아키텍처 설계·구축·보안·CI/CD·운영 자동화 역량 검증
@@ -75,7 +75,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-## 🏗 Architecture & Environment
+## 👉 Architecture & Environment
 
 ![아키텍처 다이어그램](images/architecture.png)
 
@@ -104,7 +104,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-## 🧠 트러블 슈팅 & 해결
+## 🧠 Trouble Shooting & Engineering Decisions
 
 ### 1️⃣ Packer 기반 AMI 배포 시간 과다 문제
 
@@ -134,7 +134,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 - CPU 사용률 99% 도달 후 10%로 급격히 제한 반복
 - ASG Health Check 실패로 인스턴스 재생성 발생
 
-**PROBLEM**
+**문제**
 - `t3.micro`의 Baseline CPU 10% 제한 구조
 - SSM / CloudWatch / CodeDeploy Agent 등의 상시 부하 존재
 - 실제 워크로드 대비 리소스 설계 부족
@@ -158,7 +158,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 - Routing 및 Health Check 이상 없음
 - `/admin` 경로 접근 시 403 오류 발생
 
-**PROBLEM**
+**문제**
 - WAF `AWSManagedRulesAdminProtectionRuleSet` 적용으로 `/admin` 자동 차단
 - 애플리케이션 레벨이 아닌 보안 정책 레벨 이슈
 
