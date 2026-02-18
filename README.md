@@ -19,7 +19,7 @@
 
 > 👋 지속 가능한 인프라를 설계하는 **엔지니어 곽경국**입니다.
 
-### 🛠 Technology
+### 🛠 Technical Skills
 
 **Infra / Network**  
 TCP/IP · DNS · ACL · VPN · Routing  
@@ -104,7 +104,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-## 🧠 Trouble Shooting & Engineering Decisions
+## 🧠 트러블 슈팅 & 해결
 
 ### 1️⃣ Packer 기반 AMI 배포 시간 과다 문제
 
