@@ -127,43 +127,50 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ---
 
-### 2️⃣ t3.micro CPU Throttling 문제
+### 2️⃣ t3.micro CPU Throttling Issue
 
-**현상**
-- CPU 99% → 10% 제한 반복
-- ASG에 의해 인스턴스 재생성
+**BEFORE**
+- Free Tier 환경에서 `t3.micro` 인스턴스 사용
+- CPU 사용률 99% 도달 후 10%로 급격히 제한 반복
+- ASG Health Check 실패로 인스턴스 재생성 발생
 
-**원인**
-- FreeTier t3.micro baseline 10%
-- SSM / CloudWatch / CodeDeploy Agent 부하
+**PROBLEM**
+- `t3.micro`의 Baseline CPU 10% 제한 구조
+- SSM / CloudWatch / CodeDeploy Agent 등의 상시 부하 존재
+- 실제 워크로드 대비 리소스 설계 부족
 
-**해결**
-- 인스턴스 타입 상향
-- 오버엔지니어링 요소 제거
+**AFTER**
+- 인스턴스 타입 상향 조정
+- 불필요한 Agent 및 오버엔지니어링 요소 제거
+- 워크로드 기반 리소스 산정 기준 수립
 
-**교훈**
-- 비용 최적화 ≠ 무조건 저사양
-- 워크로드 기반 리소스 설계 필요
+**RESULT**
+- CPU Throttling 현상 제거
+- ASG 불필요 재생성 문제 해결
+- 비용 최적화는 단순 저사양이 아닌 **안정성 기반 설계**라는 관점 확립
 
 ---
 
-### 3️⃣ WAF Ruleset으로 인한 /admin 403 오류
+### 3️⃣ WAF Ruleset Causing `/admin` 403 Error
 
-**현상**
-- ALB 정상
-- Routing 정상
-- /admin 접근 시 403 발생
+**BEFORE**
+- ALB 및 Target Group 정상 동작
+- Routing 및 Health Check 이상 없음
+- `/admin` 경로 접근 시 403 오류 발생
 
-**원인**
-- WAF `AWSManagedRulesAdminProtectionRuleSet` 적용으로 자동 차단
+**PROBLEM**
+- WAF `AWSManagedRulesAdminProtectionRuleSet` 적용으로 `/admin` 자동 차단
+- 애플리케이션 레벨이 아닌 보안 정책 레벨 이슈
 
-**조치**
-- ACL Ruleset 예외 처리
+**AFTER**
+- WAF ACL Ruleset 분석
+- 해당 경로 예외 처리 적용
+- 인프라 보안 정책 포함 검증 절차 수립
 
-**교훈**
-- 배포 성공 ≠ 서비스 정상
-- 보안 설정 포함 인프라 레벨 검증 필요
-- Blue/Green 배포의 필요성 인지
+**RESULT**
+- `/admin` 정상 접근 복구
+- 배포 성공 ≠ 서비스 정상이라는 인식 확립
+- 보안 설정까지 포함한 **Blue/Green 배포 검증 필요성 도출**
 
 ---
 
