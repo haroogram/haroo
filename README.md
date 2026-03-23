@@ -77,14 +77,17 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ## 👉 Architecture & Environment
 
-### Architecture Evolution (v1 → v2)
+### Current Architecture (Updated)
+![architecture-v2](images/architecture_update.png)
 
-| Before (v1) | After (v2, upgraded) |
-|---|---|
-| ![architecture-v1](images/architecture.png) | ![architecture-v2](images/architecture_update.png) |
+> v1 아키텍처를 K3s/GitOps 중심으로 고도화한 최신 구조입니다.
 
-> ✅ 기존 `architecture.png` 기반 구조를 고도화하여  
-> `architecture_update.png`로 업데이트했습니다.
+<details>
+<summary>Legacy Architecture (v1) 보기</summary>
+
+![architecture-v1](images/architecture.png)
+
+</details>
 
 ### Cloud Environment
 - AWS Multi-AZ Architecture
