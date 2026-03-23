@@ -82,6 +82,16 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 > v2는 K3s + Argo CD(GitOps) + Terraform 모듈 분리(base/data/app) 중심으로 재구성했습니다.
 
+### GitOps 운영 화면 (Argo CD)
+![argocd-overview](images/argocd.png)
+
+> Argo CD를 통해 `Healthy / Synced` 상태를 기준으로 배포 상태를 관리했습니다.
+
+### Monitoring Dashboard (Grafana)
+![grafana-dashboard](images/grafana.png)
+
+> 노드/서비스 지표를 기반으로 성능 및 이상 징후를 모니터링했습니다.
+
 <details>
 <summary>Legacy Architecture (v1) 보기</summary>
 
