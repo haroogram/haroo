@@ -85,7 +85,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 <details>
 <summary>Legacy Architecture (v1) 보기</summary>
 
-![architecture-v1](./images/architecture.png)
+<img src="images/architecture.png" alt="architecture" />
 
 </details>
 
