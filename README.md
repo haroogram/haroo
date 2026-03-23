@@ -94,6 +94,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 - ALB + WAFv2
 - Route53 + CloudFront (optional)
 - IAM Role + SSM Parameter Store 기반 접근/시크릿 관리
+- SES + Route53(DKIM/SPF) 기반 메일 송신 인프라 구성
 
 ### Server
 - Ubuntu (EC2)
