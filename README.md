@@ -77,7 +77,14 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 ## 👉 Architecture & Environment
 
-![아키텍처 다이어그램](images/architecture.png)
+### Architecture Evolution (v1 → v2)
+
+| Before (v1) | After (v2, upgraded) |
+|---|---|
+| ![architecture-v1](images/architecture.png) | ![architecture-v2](images/architecture_update.png) |
+
+> ✅ 기존 `architecture.png` 기반 구조를 고도화하여  
+> `architecture_update.png`로 업데이트했습니다.
 
 ### Cloud Environment
 - AWS Multi-AZ Architecture
