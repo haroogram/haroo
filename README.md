@@ -80,7 +80,7 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 ### Current Architecture (Updated)
 ![architecture-v2](images/architecture_update.png)
 
-> v1 아키텍처를 K3s/GitOps 중심으로 고도화한 최신 구조입니다.
+> v2는 K3s + Argo CD(GitOps) + Terraform 모듈 분리(base/data/app) 중심으로 재구성했습니다.
 
 <details>
 <summary>Legacy Architecture (v1) 보기</summary>
@@ -90,31 +90,36 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 </details>
 
 ### Cloud Environment
-- AWS Multi-AZ Architecture
-- Auto Scaling Group
-- ALB
-- WAF
-- IAM Role 기반 접근 제어
+- AWS Multi-AZ VPC (Public / Private App / Private DB subnet 분리)
+- ALB + WAFv2
+- Route53 + CloudFront (optional)
+- IAM Role + SSM Parameter Store 기반 접근/시크릿 관리
 
 ### Server
 - Ubuntu (EC2)
+- K3s (3-node control plane 구성)
 - MariaDB (RDS)
 - Redis (Single EC2)
+- Monitoring EC2 (Prometheus + Grafana)
 
 ### CI/CD
-- GitHub Actions
-- S3
-- CodeDeploy
-- CloudFormation (IaC)
+- Terraform (base / data-stack / app-stack 모듈 분리)
+- Argo CD 기반 GitOps 배포
+- GitHub Actions (빌드/배포 자동화 연계)
 
 ### Tech Stack
 - Python / Django
-- Redis (cache/broker)
+- Kubernetes (K3s), Traefik
+- Argo CD, Terraform
+- Prometheus / Grafana
+- Redis(cache/broker), MariaDB
 - Celery / Celery Beat
 
 ---
 
 ## 🧠 Trouble Shooting & Engineering Decisions
+
+※ 아래 이슈는 v1(ASG/CodeDeploy 기반) 단계에서 겪은 문제와 개선 기록입니다.
 
 ### 1️⃣ Packer 기반 AMI 배포 시간 과다 문제
 
