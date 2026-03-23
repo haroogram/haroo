@@ -82,6 +82,13 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 
 > v2는 K3s + Argo CD(GitOps) + Terraform 모듈 분리(base/data/app) 중심으로 재구성했습니다.
 
+<details>
+<summary>Legacy Architecture (v1) 보기</summary>
+
+![architecture-v1](images/architecture.png)
+
+</details>
+
 ### GitOps 운영 화면 (Argo CD)
 ![argocd-overview](images/argocd.png)
 
@@ -91,13 +98,6 @@ DevOps/Infra를 선택하게 된 이유 등을 작성 예정
 ![grafana-dashboard](images/grafana.png)
 
 > 노드/서비스 지표를 기반으로 성능 및 이상 징후를 모니터링했습니다.
-
-<details>
-<summary>Legacy Architecture (v1) 보기</summary>
-
-![architecture-v1](images/architecture.png)
-
-</details>
 
 ### Cloud Environment
 - AWS Multi-AZ VPC (Public / Private App / Private DB subnet 분리)
